@@ -1,0 +1,238 @@
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ rmdir projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ mkdir projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ pwd
+/c/Users/18048/projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ cd..
+bash: cd..: command not found
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ cd
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd ..
+
+18048@DESKTOP-7NUA8IL MINGW64 /c/Users
+$ pwd
+/c/Users
+
+18048@DESKTOP-7NUA8IL MINGW64 /c/Users
+$ cd
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd .
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd ..
+
+18048@DESKTOP-7NUA8IL MINGW64 /c/Users
+$ cd ~/projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ cd ../cc
+bash: cd: ../cc: No such file or directory
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ cd ../..
+
+18048@DESKTOP-7NUA8IL MINGW64 /c/Users
+$ cd-
+bash: cd-: command not found
+
+18048@DESKTOP-7NUA8IL MINGW64 /c/Users
+$ cd -
+/c/Users/18048/projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ cd
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd~
+bash: cd~: command not found
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd ~
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ mkdir projects
+mkdir: cannot create directory ‘projects’: File exists
+
+18048@DESKTOP-7NUA8IL MINGW64 ~
+$ cd projects
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ mkdir murders
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects
+$ cd murders
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ mkdir data rda
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ ls
+data/  rda/
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ pwd
+/c/Users/18048/projects/murders
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ mv assignment.txt ..
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ mkdir git-example
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ cd git-example
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example
+$ cd git-example/
+bash: cd: git-example/: No such file or directory
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example
+$ cd..
+bash: cd..: command not found
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example
+$ cd.
+bash: cd.: command not found
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example
+$ cd ..
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders
+$ cd git-example/
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example
+$ git clone https://github.com/rairizarry/murders.git
+Cloning into 'murders'...
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 26 (delta 1), reused 5 (delta 0), pack-reused 19
+Receiving objects: 100% (26/26), 52.05 KiB | 17.35 MiB/s, done.
+Resolving deltas: 100% (3/3), done.
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example
+$ cd murders
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ ls
+README.txt  data/            murders.Rproj  report.Rmd  report.qmd     wrangle-data.R
+analysis.R  download-data.R  rdas/          report.md   report_files/
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ echo "test" >> new-file.txt
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ echo "temporary" >> tmp.txt
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git add new-file.txt
+warning: in the working copy of 'new-file.txt', LF will be replaced by CRLF the next time Git touches it
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new-file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tmp.txt
+
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git commit -m "adding a new file"
+[master 9a97ce8] adding a new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new-file.txt
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tmp.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ echo "adding a line" >> new-file.txt
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git add new-file.txt
+warning: in the working copy of 'new-file.txt', LF will be replaced by CRLF the next time Git touches it
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git commit-m "adding a new line to new-file"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git commit -m "adding a new line to new-file"
+[master 24c8e02] adding a new line to new-file
+ 1 file changed, 1 insertion(+)
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tmp.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ echo "adding a second line" >> new-file.txt
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git commit -m "minor change to new-file" new-file.text
+error: pathspec 'new-file.text' did not match any file(s) known to git
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git commit -m "minor change to new-file" new-file.txt
+warning: in the working copy of 'new-file.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'new-file.txt', LF will be replaced by CRLF the next time Git touches it
+[master cff7e34] minor change to new-file
+ 1 file changed, 1 insertion(+)
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tmp.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$ ^C
+
+18048@DESKTOP-7NUA8IL MINGW64 ~/projects/murders/git-example/murders (master)
+$
